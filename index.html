@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Life Bachav</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- for classes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!--bootstrap icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <header>
+        <div class="conatiner-fluid row-1 ">
+            <div class="container">
+                <div class="row  p-2">
+                    <div
+                        class="col-md-8 col-lg-8 col-12 d-flex align-items-center justify-content-md-start justify-content-center">
+                        <a class="text-decoration-none" href="#"><i class="bi bi-pin-map-fill"></i> Find A Location |
+                        </a>
+                        <a class="text-decoration-none ms-2" href="#"><i class="fa fa-envelope"></i>
+                            Example@gmail.com</a>
+                    </div>
+                    <div
+                        class="col-md-4 col-lg-4 col-12 d-flex gap-4 align-items-center justify-content-md-end justify-content-center">
+
+                        <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i> <i class="fa fa-linkedin"></i>
+
+                        <div class="dropdown">
+                            <button class="dropdown-toggle btn" data-bs-toggle="dropdown"><span
+                                    class="bi bi-globe"></span>
+                                English
+                            </button>
+                            <div class="dropdown-menu dropdown-collapse">
+
+                                <div class="dropdown-item ">
+                                    हिंदी
+                                </div>
+                                <div class="dropdown-item">
+                                    తెలుగు
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-expand-md  d-flex align-items-center  mt-2 mt-lg-0 mt-md-0">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-slack fa-3x"> LifeBachav</i>
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-bar"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse " id="nav-bar">
+                    <ul class="navbar-nav p-3 p-lg-2 p-md-2 rounded-5 gap-3 mx-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#our Features">Our Features</a></li>
+                                <li><a class="dropdown-item" href="#our team">Our team</a></li>
+                                <li><a class="dropdown-item" href="404 error.html ">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="404 error.html">FAQs</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="404 error.html">404 Error</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="404 error.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="button col-12 col-md-3 col-lg-3 d-flex gap-2 justify-content-center p-2 rounded-5 mt-2 mt-lg-0 mt-md-0
+                        conatiner-fluid ">
+                <button class="rounded-circle btn-gold p-2"><i class="fa fa-search p-1"></i></button>
+                <button class=" rounded-2 btn-gold p-2">Get a Quote</button>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Log-In</button>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#registerModal">Sign-up</button>
+                <div class="modal fade " id="registerModal">
+                    <div class="modal-dialog modal-dialog-centered ">
+                        <div class="modal-content ">
+
+                            <div class="modal-header">
+                                <h2>Register User</h2>
+                            </div>
+                            <div class="mb-2 modal-body">
+                                <div>
+                                    <label class="form-label" for="userName">User Name</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bi bi-person"></span>
+                                        <input class="form-control" type="text" name="userName">
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-label" for="passWord">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bi bi-key"></span>
+                                        <input class="form-control" type="password" name="passWord">
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label class="form-label" for="city">Select your city</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bi bi-house"></span>
+                                        <select name="city" class="form-select" placeholder="Choice city">
+                                            <option>Hyderabad</option>
+                                            <option>Kakinada</option>
+                                            <option>Bangalore</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+
+                                    <lable class="form-label" for="updates">Get Updates?</lable>
+
+                                    <input type="checkbox" class="form-check-input text-align:left "
+                                        name="updates"><label class="form-check-label">&nbsp; Yes</label>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer form-select">
+                                <button class="btn btn-success col">Register</button>
+                                <button class="btn btn-danger col" data-bs-dismiss="modal">Cancel</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    <div class="modal fade" id="loginModal">
+                        <div class="modal-dialog modal-dialog-centered ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title">Login User</h2>
+                                    <button class="btn btn-close " data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <dl>
+                                        <dt>User Name</dt>
+                                        <dd><input class="form-control" type="text"
+                                                placeholder="Email or phone number "></dd>
+                                        <dt>Password</dt>
+                                        <dd><input class="form-control" type="password"
+                                                placeholder="Enter your password "></dd>
+
+                                    </dl>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success">Login</button>
+                                    <button class="btn btn-danger " data-bs-dismiss="modal">Cancel</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </nav>
+    </header>
+
+
+
+    <section class="sec-1">
+        <div class="container-fluid p-md-5 p-lg-5" style="background-color: #f8b500;">
+            <div id="carouselExample" class="carousel" data-bs-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+                </ul>
+
+                <!-- Carousel items -->
+                <div class="carousel-inner ">
+                    <!-- First Slide -->
+                    <div class="carousel-item ">
+                        <div class="row align-items-center">
+                            <div class="col-6 p-md-5 p-lg-5">
+                                <img src="https://themewagon.github.io/LifeSure/img/carousel-2.png" class="img-fluid"
+                                    alt="First slide image">
+                            </div>
+                            <div class="col-6 text-light text-end p-md-5 p-lg-5">
+                                <h4 class="h4 fw-bolder">Welcome To Life Bachav</h4>
+                                <h1 class="display-3 fw-bolder">Life Insurance <br>Makes You Happy</h1>
+                                <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting.<br>
+                                    Lorem Ipsum has been the industry's standard dummy...</p>
+                                <div class="p-md-3 p-lg-3 d-flex">
+                                    <button class="btn btn-light rounded-5 p-md-3 p-lg-3 me-3"><i
+                                            class="fa fa-play-circle"></i>
+                                        Watch Video</button>
+                                    <button class="btn btn-dark  rounded-5 p-md-3 p-lg-3 p-3"><i class="fa fa-book"></i>
+                                        Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Slide -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-6 text-light text-start p-md-5 p-lg-5">
+                                <h4 class="h4 fw-bolder">Welcome To Life Bachav</h4>
+                                <h1 class="display-3 fw-bolder">Life Insurance <br>Makes You Happy</h1>
+                                <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting.<br>
+                                    Lorem Ipsum has been the industry's standard dummy...</p>
+                                <div class="p-md-3 p-lg-3 d-flex">
+                                    <button class="btn btn-dark rounded-5 p-md-3 p-lg-3 me-3"><i
+                                            class="fa fa-play-circle"></i>
+                                        Watch Video</button>
+                                    <button class="btn btn-light rounded-5 p-md-3 p-lg-3"><i class="fa fa-book"></i>
+                                        Learn
+                                        More</button>
+                                </div>
+                            </div>
+                            <div class="col-6 p-md-5 p-lg-5">
+                                <img src="https://themewagon.github.io/LifeSure/img/carousel-2.png" class="img-fluid"
+                                    alt="First slide image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="sec-2  " style="background-color: #fceabb;" id="our Features">
+        <div class="text-center p-3 p-lg-5 p-md-5 container-fluid">
+            <h4 style="color: #f8b500;">Our Features</h4>
+            <h2 class="display-4 fw-bolder">Insurance Provide you a Better<br>Future</h2>
+            <p class="fs-6 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci
+                facilis
+                cupiditate recusandae <br> aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt
+                sint dolorem autem<br>obcaecati, ipsam mollitia hic.
+            </p>
+        </div>
+    </section>
+    <section class="container-fluid sec-3" style="background-color: #fceabb;">
+        <div class="row p-lg-5 p-md-5 p-3 ">
+            <div class="col-md-3 col-lg-3 col-12">
+                <div class="card p-5 rounded-4 mb-5">
+                    <div class="minbox">
+                        <i class="fa fa-asl-interpreting fa-3x"></i>
+                    </div>
+                    <h4 class="mb-4 mt-4">Trusted Company</h4>
+                    <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
+                        laborum odit
+                        pariatur...
+                    </p>
+                    <button class="btn-2 p-2 rounded-5 w-75">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12">
+                <div class="card p-5 rounded-4 mb-5">
+                    <div class="minbox">
+                        <i class="fa fa-dollar fa-3x"></i>
+                    </div>
+                    <h4 class="mb-4 4 mt-4">Anytime Money Back</h4>
+                    <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
+                        laborum odit
+                        pariatur...
+                    </p>
+                    <button class="btn-2 p-2 rounded-5 w-75">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12">
+                <div class="card p-5 rounded-4 mb-5">
+                    <div class="minbox">
+                        <i class="fa fa-bullseye fa-3x"></i>
+                    </div>
+                    <h4 class="mb-4 4 mt-4">Flexible Plans</h4>
+                    <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
+                        laborum odit
+                        pariatur...
+                    </p>
+                    <button class="btn-2 p-2 rounded-5 w-75">Learn More</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12">
+                <div class="card p-5 rounded-4 mb-5">
+                    <div class="minbox">
+                        <i class="fa fa-headphones fa-3x"></i>
+                    </div>
+                    <h4 class="mb-4 4 mt-4">24/7 Fast Support</h4>
+                    <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
+                        laborum odit
+                        pariatur...
+                    </p>
+                    <button class="btn-2 p-2 rounded-5 w-75">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4" style="background-color: #fceabb;" id="about us">
+        <div class="container-fluid">
+            <div class="row p-lg-5 p-md-5 p-3">
+                <div class="col-md-6 col-lg-6 col-12  mb-5 ">
+                    <div style="background-color: white;" class="p-lg-5 p-md-5 p-4 rounded-4">
+                        <h4 style="color: #f8b500;">About Our Company</h4>
+                        <h2 class="display-4 fw-bolder mb-4">High Range of Exploring Protection</h2>
+                        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt debitis
+                            sint tempora. Corporis
+                            consequatur illo blanditiis voluptates aperiam quos aliquam totam aliquid rem explicabo,
+                        </p>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                            praesentium recusandae
+                            eligendi
+                            modi
+                            hic
+                        </p>
+                        <p><i class="fa fa-check" style="color: #f8b500;"></i> We can save your money.</p>
+                        <p><i class="fa fa-check" style="color: #f8b500;"></i> Production or trading of good</p>
+                        <p><i class="fa fa-check" style="color: #f8b500;"></i> Our life insurance is flexible</p>
+                        <button class="btn-2 p-3 rounded-5">More Information</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 ">
+                    <div style="background-color: white;" class="p-lg-5 p-md-5 p-3 rounded-4">
+                        <div class="row p-lg-3 p-md-3 p-2">
+                            <div class=" rounded-3" style="background-color: #fceabb;">
+                                <img src="https://themewagon.github.io/LifeSure/img/about-1.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 p-2">
+                                <div style="background-color: #fceabb;" class="p-lg-3 p-md-3 p-2 rounded-3">
+                                    <span class="fw-bold h3">129+</span>
+                                    <h4 class="">Insurance Policies</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div style="background-color: #fceabb;" class="p-lg-3 p-md-3 p-2 rounded-3">
+                                    <span class="fw-bold h3">99+</span>
+                                    <h4 class="">Awards WON</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 p-2">
+                                <div style="background-color: #fceabb;" class="p-lg-3 p-md-3 p-2 rounded-3">
+                                    <span class="fw-bold h3">556+</span>
+                                    <h4 class="">Skilled Agents</h4>
+                                </div>
+                            </div>
+                            <div class="col-6 p-2">
+                                <div style="background-color: #fceabb;" class="p-lg-3 p-md-3 p-2 rounded-3">
+                                    <span class="fw-bold h3">967+</span>
+                                    <h4 class="">Team Members</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-5 ">
+        <div class="container-fluid p-3 p-lg-5 p-md-5 mt-5" id="our services">
+            <div class="row text-center">
+                <h4 style="color: #f8b500;">Our Services</h4>
+                <h2 class="display-4 fw-bolder">We Provide Best Services</h2>
+                <p class="fs-6 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                    adipisci
+                    facilis
+                    cupiditate recusandae <br> aperiam temporibus corporis itaque quis facere, numquam, ad culpa
+                    deserunt
+                    sint dolorem autem<br>obcaecati, ipsam mollitia hic.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-6">
+        <div class="container-fluid">
+            <div class="row p-lg-5 p-md-5 p-3">
+                <div class="col-md-3 col-lg-3 col-12">
+                    <div class="service-item mb-5">
+                        <div class="service-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-1.png" width="250px">
+                            <div class="service-icon">
+                                <i class="fa fa-users fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-4 fw-bold">Life Insurance</h4>
+                                <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet <br>consectetur adipisicing
+                                    elit.<br>
+                                    Perspiciatis,
+                                    eum!</p>
+                                <button class="btn-2 p-2 rounded-5">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-12">
+                    <div class="service-item mb-5">
+                        <div class="service-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-2.png" width="250px">
+                            <div class="service-icon">
+                                <i class="fa fa-hospital-o fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content  p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-4 fw-bold">Health Insurance</h4>
+                                <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet <br>consectetur adipisicing
+                                    elit.<br>
+                                    Perspiciatis,
+                                    eum!</p>
+                                <button class="btn-2  p-2 rounded-5">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-12">
+                    <div class="service-item mb-5">
+                        <div class="service-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-3.png" width="250x">
+                            <div class="service-icon">
+                                <i class="fa fa-car fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content  p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-4 fw-bold">Car Insurance</h4>
+                                <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet <br>consectetur adipisicing
+                                    elit.<br>
+                                    Perspiciatis,
+                                    eum!</p>
+                                <button class="btn-2  p-2 rounded-5">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-12">
+                    <div class="service-item mb-5">
+                        <div class="service-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-4.png" width="250px">
+                            <div class="service-icon">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content  p-4">
+                            <div class="service-content-inner">
+                                <h4 class="mb-4 fw-bold">Home Insurance</h4>
+                                <p class="mb-4 text-secondary">Lorem ipsum dolor sit amet <br>consectetur adipisicing
+                                    elit.<br>
+                                    Perspiciatis,
+                                    eum!</p>
+                                <button class="btn-2  p-2 rounded-5">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="sec-7" style="background-color: #fceabb;">
+        <div class="container-fluid" id="faqs">
+            <div class="row p-lg-5 p-md-5 p-2">
+                <div class="col-12 col-md-6 col-lg-6 p-md-5 p-lg-5 p-3">
+                    <h4 style="color: #f8b500;">Some Important FAQ's</h4>
+                    <h2 class="display-5 fw-bolder mb-5">Common Frequently Asked Questions</h2>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Q: What happens during Freshers' Week?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        A: Leverage agile frameworks to provide a robust synopsis for high level
+                                        overviews. Iterative approaches to corporate strategy foster collaborative
+                                        thinking to further the overall value proposition. Organically grow the holistic
+                                        world view of disruptive innovation via workplace diversity and empowerment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Q: What is the transfer application process?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        A: Leverage agile frameworks to provide a robust synopsis for high level
+                                        overviews. Iterative approaches to corporate strategy foster collaborative
+                                        thinking to further the overall value proposition. Organically grow the holistic
+                                        world view of disruptive innovation via workplace diversity and empowerment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Q: Why should I attend community college?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>A: Leverage agile frameworks to provide a robust synopsis for high level
+                                        overviews. Iterative approaches to corporate strategy foster collaborative
+                                        thinking to further the overall value proposition. Organically grow the holistic
+                                        world view of disruptive innovation via workplace diversity and empowerment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 p-5">
+                    <img src="https://themewagon.github.io/LifeSure/img/carousel-2.png" alt="" class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-8" id="blog">
+        <div class="container-fluid p-3 p-lg-5 p-md-5">
+            <div class="row text-center mt-3">
+                <h4 style="color: #f8b500;">From Blog</h4>
+                <h2 class="display-4 fw-bolder">News And Updates</h2>
+                <p class="fs-6 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                    adipisci
+                    facilis
+                    cupiditate recusandae <br> aperiam temporibus corporis itaque quis facere, numquam, ad culpa
+                    deserunt
+                    sint dolorem autem<br>obcaecati, ipsam mollitia hic.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-9">
+        <div class="container ">
+            <div class="row p-lg-5 p-md-5 p-3">
+                <div class="col-md-4 col-lg-4 col-12 mb-5">
+                    <div class="blog-item rounded-4 ">
+                        <div class="blog-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-1.png" class="img-fluid">
+                            <div class="blog-categiry">
+                                <span>Business</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-lg-4 p-md-4 p-3">
+                            <div class="blog-comment gap-2">
+                                <div class="small col-4"><span class="fa fa-user"></span> Martin.C</div>
+                                <div class="small col-4"><span class="fa fa-calendar"></span> 30 Dec 2025</div>
+                                <div class="small col-4"><span class="fa fa-comment"></span> 6 Comments</div>
+                            </div>
+                            <a href="#" class="tt">Which allows you to pay down insurance bills</a>
+                            <p class="text-secondary mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius libero soluta
+                                impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="bb">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-12 mb-5">
+                    <div class="blog-item rounded-4 ">
+                        <div class="blog-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-2.png" class="img-fluid">
+                            <div class="blog-categiry">
+                                <span>Business</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-lg-4 p-md-4 p-3">
+                            <div class="blog-comment gap-2">
+                                <div class="small col-4"><span class="fa fa-user"></span> Martin.C</div>
+                                <div class="small col-4"><span class="fa fa-calendar"></span> 30 Dec 2025</div>
+                                <div class="small col-4"><span class="fa fa-comment"></span> 6 Comments</div>
+                            </div>
+                            <a href="#" class="tt">Leverage agile frameworks to provide</a>
+                            <p class="text-secondary mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius libero soluta
+                                impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="bb">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-12 mb-5">
+                    <div class="blog-item rounded-4">
+                        <div class="blog-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/blog-3.png" class="img-fluid">
+                            <div class="blog-categiry">
+                                <span>Business</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-lg-4 p-md-4 p-3">
+                            <div class="blog-comment gap-2">
+                                <div class="small col-4"><span class="fa fa-user"></span> Martin.C</div>
+                                <div class="small col-4"><span class="fa fa-calendar"></span> 30 Dec 2025</div>
+                                <div class="small col-4"><span class="fa fa-comment"></span> 6 Comments</div>
+                            </div>
+                            <a href="#" class="tt">Which allows you to pay down insurance bills</a>
+                            <p class="text-secondary mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius libero soluta
+                                impedit eligendi? Quibusdam, laudantium.</p>
+                            <a href="#" class="bb ">Read More <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-10" id="our team">
+        <div class="container-fluid p-3 p-lg-5 p-md-5">
+            <div class="row text-center">
+                <h4 style="color: #f8b500;">Our Team</h4>
+                <h2 class="display-4 fw-bolder">Meet Our Expert Team Members</h2>
+                <p class="fs-6 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                    adipisci
+                    facilis
+                    cupiditate recusandae <br> aperiam temporibus corporis itaque quis facere, numquam, ad culpa
+                    deserunt
+                    sint dolorem autem<br>obcaecati, ipsam mollitia hic.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sec-11" id="our team">
+        <div class="container">
+            <div class="row p-lg-5 p-md-5 p-2">
+                <div class="col-md-3 col-lg-3 col-6 mb-4">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/team-1.jpg" class="img-fluid"
+                                width="100%">
+                            <div class="team-icon">
+                                <a class="social-btn" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-title ">
+                            <h4 class="mb-0">David James</h4>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-6 mb-4">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/team-2.jpg" class="img-fluid"
+                                width="100%">
+                            <div class="team-icon">
+                                <a class="social-btn" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">David James</h4>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/LifeSure/img/team-3.jpg" class="img-fluid"
+                                width="100%">
+                            <div class="team-icon">
+                                <a class="social-btn" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">David James</h4>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-6">
+                    <div class="team-item w-100">
+                        <div class="team-img ">
+                            <img src="https://themewagon.github.io/LifeSure/img/team-4.jpg" class="img-fluid"
+                                width="100%">
+                            <div class="team-icon">
+                                <a class="social-btn" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                                <a class="social-btn" href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-title">
+                            <h4 class="mb-0">David James</h4>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid mt-5 ">
+            <div class="row p-5 d-flex justify-content-center">
+                <div class="ff1 col-md-3 col-lg-3 col-12 mb-4">
+                    <h3 class="fw-bold"><i class="fa fa-slack"></i> LifeBachav</h3>
+                    <p class="text-secondary">Dolor amet sit justo amet elitr clita <br>ipsum elitr
+                        est.Lorem ipsum dolor <br>sit amet, consectetur adipiscing...</p>
+                    <div class="footer-btn d-flex">
+                        <button><i class="fa fa-facebook"></i></button>
+                        <button><i class="fa fa-twitter"></i></button>
+                        <button><i class="fa fa-instagram"></i></button>
+                        <button><i class="fa fa-linkedin"></i></button>
+                    </div>
+                </div>
+                <div class="ff2 col-md-2 col-lg-2 col-12 mb-4">
+
+                    <div class="footer-item">
+                        <h4 class="fw-bold">Useful Links</h4>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i> About Us</a><br>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i> Features</a><br>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i> Services</a><br>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i> FAQ's</a><br>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i> Blogs</a><br>
+                        <a href="#"><i class="fa fa-angle-right me-2"></i> Contact</a>
+                    </div>
+
+                </div>
+                <div class="ff3 col-md-3 col-lg-3 col-12 mb-4">
+                    <h4 class="fw-bold mb-4">Instagram</h4>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://themewagon.github.io/LifeSure/img/instagram-footer-1.jpg"
+                                class="img-fluid">
+
+                        </div>
+                        <div class="col-4">
+
+                            <img src="https://themewagon.github.io/LifeSure/img/instagram-footer-2.jpg"
+                                class="img-fluid">
+
+
+                        </div>
+                        <div class="col-4">
+
+                            <img src="https://themewagon.github.io/LifeSure/img/instagram-footer-3.jpg"
+                                class="img-fluid">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+
+                            <img src="https://themewagon.github.io/LifeSure/img/instagram-footer-4.jpg"
+                                class="img-fluid">
+
+
+                        </div>
+                        <div class="col-4">
+
+                            <img src="https://themewagon.github.io/LifeSure/img/instagram-footer-5.jpg"
+                                class="img-fluid">
+
+
+                        </div>
+                        <div class="col-4">
+                            <img src="https://themewagon.github.io/LifeSure/img/instagram-footer-6.jpg"
+                                class="img-fluid">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ff4 col-md-3 col-lg-3 col-12">
+
+                    <div class="col">
+                        <div class="footer-item">
+                            <h4 class="fw-bold mb-4">Newsletter</h4>
+                            <p class="text-secondary">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="position-relative rounded-pill mb-4">
+                                <input type="text" class="form-control rounded-5 p-3" placeholder="Enter your email">
+                                <button type="button" class="p-2 rounded-5">SignUp</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="container-fluid foot-2 d-flex justify-content-center">
+            <div class="row">
+
+                <div class="details d-flex justify-content-center">
+                    <div class="col-4 d-flex align-items-center ">
+                        <div style=" margin-left: 20px;"><i class="fa fa-location-arrow fa-3x"></i></div>
+                        <div>
+                            <p class="small p-2">Address<br>
+                                <span>123 Street New York.USA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <div><i class="fa fa-envelope fa-3x"></i></div>
+                        <div>
+                            <p class="small p-2">Address<br>
+                                <span>123 Street New York.USA</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center">
+                        <div><i class="fa fa-phone fa-3x"></i></div>
+                        <div>
+                            <p class="small p-2">Address<br>
+                                <span>123 Street New York.USA</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-white p-2" align="center">
+            <p class="small mt-2"> &copy; All Copy Right Reserved Designed By <a
+                    style="text-decoration: none; color: #f8b500;" href="#"> Vamsi
+                    Rednam</a></p>
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!--bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--jquery-->
+</body>
+
+</html>

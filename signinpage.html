@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialog</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+
+    </style>
+  </head>
+  <body class="container-fluid justify-content-center align-content-center">
+    <h2 class=" justify-content-center align-content-center" > Welcome</h2>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">login</button>
+
+    <div class="modal fade" id="registerModal">
+        <div class="modal-dialog modal-dialog-centered w-50">
+            <div class="modal-content">
+                <div>
+                    <div class="modal-header">
+                    <h2 >Register User</h2>
+                </div>
+                <div class="mb-2 modal-body">
+                    <div >
+                       <label  class="form-label" for="userName">User Name</label>
+                       <div class="input-group">
+                        <span class="input-group-text bi bi-person" ></span>
+                        <input class="form-control" type="text" name="userName">
+                       </div>   
+                    </div>
+                    <div class="mb-2">
+                        <label  class="form-label" for="passWord">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text bi bi-key" ></span>
+                            <input class="form-control" type="password" name="passWord">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-2">
+                        <label class="form-label" for="city">Select your city</label>
+                        <div class="input-group">
+                            <span class="input-group-text bi bi-house" ></span>
+                            <select name="city" class="form-select" placeholder="Choice city">
+                                <option>Tossipudi</option>
+                            <option>Hyderabad</option>
+                            <option>Kakinada</option>
+                            <option>Bangalore</option>
+                        </select>
+                        </div>
+                    </div> 
+                
+                    <div >
+                        
+                      <lable class="form-label" for="updates">Get Updates?</lable>
+                      
+                        <input type="checkbox" class="form-check-input text-align:left " name="updates"><label class="form-check-label">&nbsp; Yes</label>
+                      
+                    </div>
+                    </div>
+                    <div class="modal-footer form-select">
+                        <button class="btn btn-success col">Register</button>
+                        <button class="btn btn-danger col" data-bs-dismiss="modal">Cancel</button>
+    
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-dialog-centered w-50">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Login User</h2>
+                    <button class="btn btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input class="form-control" type="text" placeholder="Email or phone number "></dd>
+                        <dt>Password</dt>
+                        <dd><input class="form-control" type="password" placeholder="Enter your password "></dd>
+       
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success">Login</button>
+                    <button class="btn btn-danger " data-bs-dismiss="modal">Cancel</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
